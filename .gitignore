@@ -1,0 +1,8 @@
+# stolen from here, which talks about being for 1.x.
+# https://www.gitignore.io/api/grails
+
+/target
+/*.war
+/*.zip
+/web-app/WEB-INF/classes
+
