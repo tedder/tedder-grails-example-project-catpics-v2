@@ -84,23 +84,9 @@ codenarc {
     excludeBaseline = ''
 
     ruleSetFiles = "file:grails-app/conf/CodeNarcRules.groovy" // Ruleset file path
-    reports = {
-        //SortableHtmlReport('sortable') {    // new in 0.24, JS sorting is way too expensive, O(n**2)
-        HtmlReport('html') {    // Report type is 'html'
-        outputFile = 'target/codenarc.html'
-        title = 'catpics Codenarc'
-        maxPriority = 2
-      }
-      TextReport('text') {
-        outputFile = 'target/codenarc.txt'
-        title = 'catpics Codenarc'
-        maxPriority = 1
-      }
-    }
     maxPriority1Violations = 0
-    //maxPriority2Violations = 10
-    //maxPriority3Violations = 10
-    maxPriority = 2
+    maxPriority2Violations = 0
+    maxPriority3Violations = 0
 
     propertiesFile = 'codenarc.properties'
 }
